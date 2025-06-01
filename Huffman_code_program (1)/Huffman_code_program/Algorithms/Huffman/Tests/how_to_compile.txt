@@ -1,0 +1,4 @@
+g++ -c ..\huffman_algorithm.cpp
+g++ -c ..\huffman_tree.cpp 
+g++ -c huffman_tests.cpp
+g++ -o test huffman_algorithm.o huffman_tree.o huffman_tests.o ..\..\..\IO\Bit_stream\Tests\bit_stream.o

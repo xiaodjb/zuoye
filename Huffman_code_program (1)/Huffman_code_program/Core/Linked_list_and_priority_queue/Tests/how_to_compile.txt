@@ -1,0 +1,1 @@
+g++ -o test linked_list_and_priority_queue_tests.cpp

@@ -1,0 +1,3 @@
+gcc -c ../c_utils.c 
+g++ -c test_c_utils.cpp 
+g++ -o test c_utils.o test_c_utils.o

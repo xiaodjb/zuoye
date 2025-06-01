@@ -1,0 +1,2 @@
+g++ -c ..\bit_stream.cpp
+g++ -o test  bit_stream.o bit_stream_tests.cpp
