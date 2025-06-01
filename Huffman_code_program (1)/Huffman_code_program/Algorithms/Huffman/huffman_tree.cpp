@@ -29,7 +29,25 @@ void print_huffman_tree(const HuffmanNode *node, int depth, const char * message
     }
     else // print the tree in a symmetric way, more interesting. 
     {   
-        // !!!!!! Task 34, provide the missing code !!!!!
+        template<template<typename, typename> class Container = OrderedLinkedListContainer>
+class HuffmanTree {
+private:
+    std::unique_ptr<HuffmanNode> root;
+    
+public:
+    template<typename FreqMap>
+    HuffmanTree(const FreqMap& frequency_map) {
+        PriorityQueue<std::unique_ptr<HuffmanNode>, CompareNodes, Container> pq;
+        // Rest of constructor...
+    }
+};
+
+// Usage:
+HuffmanTree<VectorHeapContainer> fast_tree(freq_map);
+HuffmanTree<OrderedLinkedListContainer> list_tree(freq_map);
+      
+      
+      // !!!!!! Task 34, provide the missing code !!!!!
         /*
         - Cast node to a const pointer to Internal Node   
         - A recursive call to print the left subtree, with an incremented depth, and "[left]" as the message. 
